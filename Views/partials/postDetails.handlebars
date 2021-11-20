@@ -1,0 +1,19 @@
+<div class="card">
+    <header class="card-header card-header-title">
+        <div class="column">
+
+            <a href="/edit/post/{{id}}" class="is-pulled-left">{{title}} by {{user.name}} on {{format_date
+                date_created}}</a></p>
+            <a href="/dashboard/edit/post/{{id}}"><button class="button">Edit post</button></a>
+        </div>
+
+        <div class="column">
+        </div>
+
+    </header>
+
+    <div class="card-content">
+        <div class="content has-text-justified">
+            {{text}}
+        </div>
+    </div>

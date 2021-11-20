@@ -1,0 +1,26 @@
+<article>
+    <a href="/dashboard/" class="is-pulled-right">Dashboard</a>
+    <h2 class="title">Edit post</h2>
+    <div>
+        <div>
+            <label for="post-title">Title</label>
+            <input class="input" id="post-title" name="post-title" type="text" value="{{post.title}}" />
+        </div>
+        <div>
+            <label for="post">Text</label>
+            <input class="textarea" id="post-content" name="post-content" type="text" value="{{post.text}}" />
+        </div>
+        <div class="is-pulled-right">
+            Written on {{format_date post.date_created}}
+            <a href="/post/{{post.id}}"></a>
+        </div>
+        <button type="submit" id="edit" class="button">Edit</button>
+        <button type="button" id="delete" class="button delete-btn">Delete</button>
+    </div>
+</article>
+
+{{> comments post.comments}}
+
+<script src="/js/editPost.js"></script>
+<script src="/js/deletePost.js"></script>
+<script src="/js/commentPost.js"></script>
