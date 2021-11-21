@@ -1,5 +1,5 @@
 <div>
-    <a href="/dashboard/newpost"><button id="new-post" class="button is-pulled-right">Create a new post</button></a>
+    <button id="new-post-form" class="button is-pulled-right"><a href="/dashboard/newPost"></a>Create a new post</a></button>
     <h2 class="title">Dashboard</h2>
     <hr>
     {{#if posts.length}}
@@ -8,7 +8,7 @@
 {{#each posts as |post|}}
 
 {{> postDetails post}}
-
+${userpost}
 
 {{{newpost}}}
 
@@ -21,4 +21,4 @@
 
 {{/if}}
 
-<script src="/js/writePost.js"></script>
+<script src="/js/createPost.js"></script>
